@@ -33,13 +33,13 @@ flowchart TB
 
   commons["Open Framework Commons<br/>Shared principles and boundaries"]
 
-  native -. references .-> commons
-  influence -. references .-> commons
-  devdays -. references .-> commons
-  relationship -. references .-> commons
+  native -. "in Commons scope" .-> commons
+  influence -. "in Commons scope" .-> commons
+  devdays -. "in Commons scope" .-> commons
+  relationship -. "in Commons scope" .-> commons
 ```
 
-Commons supplies the shared documentation beneath the products. It does not direct them, rank them, or make adoption automatic.
+Commons supplies shared documentation beneath the products. It does not direct or rank them. Each existing product separately decides whether and when to adopt an exact Commons release; the future Relationship Operating Framework will make that decision when it exists.
 
 ## Read this first
 

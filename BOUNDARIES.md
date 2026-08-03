@@ -37,15 +37,20 @@ flowchart TD
   kind["Is it a shared principle or boundary?"]
   proposal["Propose a Commons change"]
   review["Review the effect on all four products"]
-  decision["Each product independently adopts, defers, or documents a deviation"]
+  steward{"Steward decision"}
+  release["Publish in an exact tagged Commons release"]
 
   start -->|"No or unclear"| local
   start -->|"Yes"| kind
   kind -->|"No — it describes a method, example, or implementation"| local
   kind -->|"Yes"| proposal
   proposal --> review
-  review --> decision
+  review --> steward
+  steward -->|"Reject or keep local"| local
+  steward -->|"Accept"| release
 ```
+
+Publication does not change another product. Each product's separate adoption decision is shown in [Governance](GOVERNANCE.md#adoption-flow).
 
 ## Mission Control
 

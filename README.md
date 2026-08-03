@@ -7,11 +7,36 @@ This release is scoped to exactly four independent products:
 - AI-Native Operating Framework
 - Influence Operating Framework
 - AI Dev Days
-- Relationship Operating Framework, when it is created
+- Relationship Operating Framework
 
 Commons is documentation. People and agents can read it before using or changing an ecosystem product so they understand the philosophy those products share.
 
 Commons is not a framework for accomplishing product-specific work. It is not an operating system, application, runtime, compatibility layer, certification, shared data model, or parent product.
+
+## Ecosystem at a glance
+
+This diagram answers how four independent products can share Commons without becoming modules of it.
+
+```mermaid
+flowchart TB
+  subgraph products["Independent products — equal provenance"]
+    direction LR
+    native["AI-Native<br/>Operating Framework"]
+    influence["Influence<br/>Operating Framework"]
+    devdays["AI Dev Days<br/>Learning community"]
+    relationship["Relationship<br/>Operating Framework"]
+
+    native ~~~ influence
+    influence ~~~ devdays
+    devdays ~~~ relationship
+  end
+
+  commons["Open Framework Commons<br/>Shared principles and boundaries"]
+
+  products -. "all are in Commons scope" .-> commons
+```
+
+Commons supplies shared documentation beneath the products. It does not direct or rank them. Each product separately decides whether and when to adopt an exact Commons release.
 
 ## Read this first
 
@@ -34,4 +59,11 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Version 1.0.0 is the approved initial release. No ecosystem product has adopted this release yet.
+Version 1.0.0 is the approved initial release at commit `27870fb1d57d951b9ef5a3a86f33ef068ee557da`.
+
+The four ecosystem products have adopted that exact release:
+
+- [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/2e402d89598849f37e12f6e54c9d7f24ac5ca76c/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
+- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/f91851a1b42b28b01928e5db7aaac4c20b946417/decisions/0003-adopt-open-framework-commons-v1.0.0.md);
+- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/04d9bad2588af2e7725fbdb3d03f232373dcd620/decisions/0002-adopt-open-framework-commons-v1.0.0.md); and
+- [Relationship Operating Framework](https://github.com/BradGroux/relationship-operating-framework/blob/ce7957143aa5eb3860b2fe81b63ec62a8857dbfb/README.md#commons-adoption-and-independence).

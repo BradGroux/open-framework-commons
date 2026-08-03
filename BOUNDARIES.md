@@ -6,7 +6,7 @@ Commons contains principles and boundaries that apply across the ecosystem. It d
 
 ## Every product stands alone
 
-AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and the future Relationship Operating Framework each own their:
+AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework each own their:
 
 - purpose and audience;
 - practical guidance and methods;
@@ -25,6 +25,32 @@ A statement belongs in Commons only when it expresses a principle or boundary th
 If a statement tells someone how to perform AI-native work, practice influence, run AI Dev Days, or steward a relationship, it belongs in that product instead.
 
 When uncertain, keep the idea local until repeated use shows that it is genuinely shared.
+
+### Where guidance belongs
+
+This diagram answers whether a statement belongs in Commons or should remain with one product.
+
+```mermaid
+flowchart TD
+  start["Does the statement apply to all four ecosystem products?"]
+  local["Keep it product-local"]
+  kind["Is it a shared principle or boundary?"]
+  proposal["Propose a Commons change"]
+  review["Review the effect on all four products"]
+  steward{"Steward decision"}
+  release["Publish in an exact tagged Commons release"]
+
+  start -->|"No or unclear"| local
+  start -->|"Yes"| kind
+  kind -->|"No — it describes a method, example, or implementation"| local
+  kind -->|"Yes"| proposal
+  proposal --> review
+  review --> steward
+  steward -->|"Reject or keep local"| local
+  steward -->|"Accept"| release
+```
+
+Publication does not change another product. Each product's separate adoption decision is shown in [Governance](GOVERNANCE.md#adoption-flow).
 
 ## Mission Control
 

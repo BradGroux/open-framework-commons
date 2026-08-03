@@ -16,7 +16,7 @@ Commons is scoped to:
 - AI-Native Operating Framework;
 - Influence Operating Framework;
 - AI Dev Days; and
-- Relationship Operating Framework, when it is created.
+- Relationship Operating Framework.
 
 These products have equal provenance and importance. They may serve different audiences, use different structures, and evolve on different schedules.
 

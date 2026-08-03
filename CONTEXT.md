@@ -9,7 +9,7 @@ A documented set of principles, boundaries, and practical guidance that people a
 _Avoid_: Application, runtime, operating system, software platform
 
 **Open Framework Ecosystem**:
-AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, the future Relationship Operating Framework, and the Commons documentation they share.
+AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, Relationship Operating Framework, and the Commons documentation they share.
 _Avoid_: Suite, monolith, platform
 
 **Open Framework Commons**:

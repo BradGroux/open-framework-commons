@@ -10,7 +10,7 @@ The steward decides changes to the shared documentation. Contributors and agents
 
 Before changing Commons, answer:
 
-1. Does this principle or boundary apply to AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and the future Relationship Operating Framework?
+1. Does this principle or boundary apply to AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework?
 2. Would keeping it local create real confusion across the ecosystem?
 3. Can it remain documentation without prescribing a system or implementation?
 4. Does it preserve each product's independent purpose and authority?
@@ -31,6 +31,30 @@ A meaningful change should be checked for:
 ## Adoption
 
 Changing Commons does not automatically change an ecosystem product. Each product records its own decision to adopt, defer, or deviate from a Commons revision.
+
+### Adoption flow
+
+This diagram answers how a product handles an exact Commons release without surrendering its authority.
+
+```mermaid
+flowchart LR
+  review["Review an exact Commons tag and commit"]
+  choice{"Product decision"}
+  adopt["Adopt the shared guidance"]
+  defer["Defer the revision"]
+  deviate["Document the local difference"]
+  record["Record the decision through product governance"]
+  publish["Publish the decision with the exact Commons tag and commit"]
+
+  review --> choice
+  choice -->|"Adopt"| adopt
+  choice -->|"Defer"| defer
+  choice -->|"Deviate"| deviate
+  adopt --> record
+  defer --> record
+  deviate --> record
+  record --> publish
+```
 
 ## Releases
 

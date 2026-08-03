@@ -5,4 +5,3 @@
 
 # Preserve overbuilt snapshots locally without tracking them.
 *-overbuilt/
-**/*-overbuilt/

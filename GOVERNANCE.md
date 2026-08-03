@@ -10,7 +10,7 @@ The steward decides changes to the shared documentation. Contributors and agents
 
 Before changing Commons, answer:
 
-1. Does this principle or boundary apply to AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework?
+1. Does this principle or boundary apply to AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and the future Relationship Operating Framework?
 2. Would keeping it local create real confusion across the ecosystem?
 3. Can it remain documentation without prescribing a system or implementation?
 4. Does it preserve each product's independent purpose and authority?

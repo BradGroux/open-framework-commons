@@ -13,7 +13,7 @@ AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and t
 - examples and research;
 - terminology beyond the shared vocabulary;
 - Mission Control recommendations;
-- governance and release decisions; and
+- license, governance, and release decisions; and
 - implementation choices, if any.
 
 Referencing Commons does not make a product a module, child product, or implementation of Commons.

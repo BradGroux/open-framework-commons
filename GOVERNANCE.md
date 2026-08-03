@@ -10,7 +10,7 @@ The steward decides changes to the shared documentation. Contributors and agents
 
 Before changing Commons, answer:
 
-1. Does this principle or boundary apply to AI-Native, Influence, AI Dev Days, and Relationship?
+1. Does this principle or boundary apply to AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework?
 2. Would keeping it local create real confusion across the ecosystem?
 3. Can it remain documentation without prescribing a system or implementation?
 4. Does it preserve each product's independent purpose and authority?
@@ -31,6 +31,10 @@ A meaningful change should be checked for:
 ## Adoption
 
 Changing Commons does not automatically change an ecosystem product. Each product records its own decision to adopt, defer, or deviate from a Commons revision.
+
+## Ecosystem scope changes
+
+Adding, removing, or renaming a product in the Commons scope is an explicit Charter amendment. The steward records the decision and updates all scoped-product references, including the Charter's complete product list and the shared-applicability test. A scope amendment does not change the affected product without that product's separate decision.
 
 ## Governance growth
 

@@ -11,7 +11,7 @@ It provides a shared philosophical foundation so people and agents can recognize
 
 ## Ecosystem
 
-Commons serves:
+Commons is scoped to:
 
 - AI-Native Operating Framework;
 - Influence Operating Framework;
@@ -27,6 +27,7 @@ Commons owns only:
 - shared principles;
 - shared boundaries;
 - shared expectations for honest research and review;
+- its own lightweight stewardship and change process;
 - the relationship among ecosystem products; and
 - guidance for referencing Commons without surrendering product independence.
 
@@ -38,4 +39,6 @@ Commons cannot silently change another product. Each product decides whether and
 
 ## Open commitment
 
-Commons and the products it serves are intended to be open source under the MIT License. They should improve through use, research, contribution, and accountable revision rather than claims of permanent completeness.
+Commons is open source under the MIT License. Each independent product owns its licensing decision; Commons does not assign a license to another product.
+
+Commons and the ecosystem products should improve through use, research, contribution, and accountable revision rather than claims of permanent completeness.

@@ -28,6 +28,10 @@ Read Commons for the shared philosophy, then read the selected product for the a
 
 Each product stands alone. A person may use one product without adopting the others.
 
+## Independent review record
+
+Sanitized independent reviews and their disposition are published in [project/reviews](project/reviews/README.md). Each report identifies the exact commit reviewed and its limitations. Document review does not establish adoption or real-world effectiveness.
+
 ## Status
 
 Draft for owner review. No ecosystem product has adopted this draft yet.

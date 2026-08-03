@@ -1,6 +1,6 @@
 # Charter
 
-- **Status:** Draft for owner review
+- **Status:** Version 1.0.0 approved initial release
 - **Steward:** Brad Groux
 
 ## Purpose

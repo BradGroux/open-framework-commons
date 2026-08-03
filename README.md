@@ -2,7 +2,7 @@
 
 Open Framework Commons is the small set of shared principles and boundaries for Brad Groux's Open Framework Ecosystem.
 
-This draft is scoped to exactly four independent products:
+This release is scoped to exactly four independent products:
 
 - AI-Native Operating Framework
 - Influence Operating Framework
@@ -34,4 +34,4 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Draft for owner review. No ecosystem product has adopted this draft yet.
+Version 1.0.0 is the approved initial release. No ecosystem product has adopted this release yet.

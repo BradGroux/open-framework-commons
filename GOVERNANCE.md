@@ -32,6 +32,10 @@ A meaningful change should be checked for:
 
 Changing Commons does not automatically change an ecosystem product. Each product records its own decision to adopt, defer, or deviate from a Commons revision.
 
+## Releases
+
+Published Commons revisions use semantic versioning and immutable annotated Git tags. Each product references the exact tag it reviewed. Changes to `main` do not alter an adopted revision.
+
 ## Ecosystem scope changes
 
 Adding, removing, or renaming a product in the Commons scope is an explicit Charter amendment. The steward records the decision and updates all scoped-product references, including the Charter's complete product list and the shared-applicability test. A scope amendment does not change the affected product without that product's separate decision.

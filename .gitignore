@@ -1,0 +1,8 @@
+# Local recovery archives are never repository content.
+/archive/
+/archives/
+/open-framework-archive/
+
+# Preserve overbuilt snapshots locally without tracking them.
+*-overbuilt/
+**/*-overbuilt/

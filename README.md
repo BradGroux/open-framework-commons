@@ -13,6 +13,34 @@ Commons is documentation. People and agents can read it before using or changing
 
 Commons is not a framework for accomplishing product-specific work. It is not an operating system, application, runtime, compatibility layer, certification, shared data model, or parent product.
 
+## Ecosystem at a glance
+
+This diagram answers how four independent products can share Commons without becoming modules of it.
+
+```mermaid
+flowchart TB
+  subgraph products["Independent products — equal provenance"]
+    direction LR
+    native["AI-Native<br/>Operating Framework"]
+    influence["Influence<br/>Operating Framework"]
+    devdays["AI Dev Days<br/>Learning community"]
+    relationship["Relationship<br/>Operating Framework<br/>(future)"]
+
+    native ~~~ influence
+    influence ~~~ devdays
+    devdays ~~~ relationship
+  end
+
+  commons["Open Framework Commons<br/>Shared principles and boundaries"]
+
+  native -. references .-> commons
+  influence -. references .-> commons
+  devdays -. references .-> commons
+  relationship -. references .-> commons
+```
+
+Commons supplies the shared documentation beneath the products. It does not direct them, rank them, or make adoption automatic.
+
 ## Read this first
 
 1. [Charter](CHARTER.md) — purpose and authority

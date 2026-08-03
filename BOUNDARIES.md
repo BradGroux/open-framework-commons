@@ -26,6 +26,27 @@ If a statement tells someone how to perform AI-native work, practice influence, 
 
 When uncertain, keep the idea local until repeated use shows that it is genuinely shared.
 
+### Where guidance belongs
+
+This diagram answers whether a statement belongs in Commons or should remain with one product.
+
+```mermaid
+flowchart TD
+  start["Does the statement apply to all four ecosystem products?"]
+  local["Keep it product-local"]
+  kind["Is it a shared principle or boundary?"]
+  proposal["Propose a Commons change"]
+  review["Review the effect on all four products"]
+  decision["Each product independently adopts, defers, or documents a deviation"]
+
+  start -->|"No or unclear"| local
+  start -->|"Yes"| kind
+  kind -->|"No — it describes a method, example, or implementation"| local
+  kind -->|"Yes"| proposal
+  proposal --> review
+  review --> decision
+```
+
 ## Mission Control
 
 Mission Control is a product-local documentation and design concern. A product may describe the information, decisions, health, research, contributions, actions, and approvals that a useful implementation should make visible.

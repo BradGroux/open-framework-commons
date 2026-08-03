@@ -33,10 +33,7 @@ flowchart TB
 
   commons["Open Framework Commons<br/>Shared principles and boundaries"]
 
-  native -. "in Commons scope" .-> commons
-  influence -. "in Commons scope" .-> commons
-  devdays -. "in Commons scope" .-> commons
-  relationship -. "in Commons scope" .-> commons
+  products -. "all are in Commons scope" .-> commons
 ```
 
 Commons supplies shared documentation beneath the products. It does not direct or rank them. Each existing product separately decides whether and when to adopt an exact Commons release; the future Relationship Operating Framework will make that decision when it exists.
@@ -62,4 +59,12 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Version 1.0.0 is the approved initial release. No ecosystem product has adopted this release yet.
+Version 1.0.0 is the approved initial release at commit `27870fb1d57d951b9ef5a3a86f33ef068ee557da`.
+
+The three existing ecosystem products have adopted that exact release:
+
+- [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/2e402d89598849f37e12f6e54c9d7f24ac5ca76c/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
+- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/f91851a1b42b28b01928e5db7aaac4c20b946417/decisions/0003-adopt-open-framework-commons-v1.0.0.md); and
+- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/04d9bad2588af2e7725fbdb3d03f232373dcd620/decisions/0002-adopt-open-framework-commons-v1.0.0.md).
+
+Relationship Operating Framework has not been created and therefore has not made an adoption decision.

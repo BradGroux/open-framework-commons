@@ -59,11 +59,11 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Version 1.0.0 is the approved initial release at commit `27870fb1d57d951b9ef5a3a86f33ef068ee557da`.
+Version 1.0.0 is the approved initial release. Each product pins the exact Commons commit resolved by that release rather than relying on a moving branch.
 
-The four ecosystem products have adopted that exact release:
+The four ecosystem products maintain their adoption records at:
 
-- [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/2e402d89598849f37e12f6e54c9d7f24ac5ca76c/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
-- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/f91851a1b42b28b01928e5db7aaac4c20b946417/decisions/0003-adopt-open-framework-commons-v1.0.0.md);
-- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/04d9bad2588af2e7725fbdb3d03f232373dcd620/decisions/0002-adopt-open-framework-commons-v1.0.0.md); and
-- [Relationship Operating Framework](https://github.com/BradGroux/relationship-operating-framework/blob/ce7957143aa5eb3860b2fe81b63ec62a8857dbfb/README.md#commons-adoption-and-independence).
+- [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/main/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
+- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/main/decisions/0003-adopt-open-framework-commons-v1.0.0.md);
+- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/master/decisions/0002-adopt-open-framework-commons-v1.0.0.md); and
+- [Relationship Operating Framework](https://github.com/BradGroux/relationship-operating-framework/blob/main/README.md#commons-adoption-and-independence).

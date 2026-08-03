@@ -6,7 +6,7 @@ Commons contains principles and boundaries that apply across the ecosystem. It d
 
 ## Every product stands alone
 
-AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and the future Relationship Operating Framework each own their:
+AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework each own their:
 
 - purpose and audience;
 - practical guidance and methods;

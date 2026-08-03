@@ -7,7 +7,7 @@ This release is scoped to exactly four independent products:
 - AI-Native Operating Framework
 - Influence Operating Framework
 - AI Dev Days
-- Relationship Operating Framework, when it is created
+- Relationship Operating Framework
 
 Commons is documentation. People and agents can read it before using or changing an ecosystem product so they understand the philosophy those products share.
 
@@ -24,7 +24,7 @@ flowchart TB
     native["AI-Native<br/>Operating Framework"]
     influence["Influence<br/>Operating Framework"]
     devdays["AI Dev Days<br/>Learning community"]
-    relationship["Relationship<br/>Operating Framework<br/>(future)"]
+    relationship["Relationship<br/>Operating Framework"]
 
     native ~~~ influence
     influence ~~~ devdays
@@ -36,7 +36,7 @@ flowchart TB
   products -. "all are in Commons scope" .-> commons
 ```
 
-Commons supplies shared documentation beneath the products. It does not direct or rank them. Each existing product separately decides whether and when to adopt an exact Commons release; the future Relationship Operating Framework will make that decision when it exists.
+Commons supplies shared documentation beneath the products. It does not direct or rank them. Each product separately decides whether and when to adopt an exact Commons release.
 
 ## Read this first
 
@@ -61,10 +61,9 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 Version 1.0.0 is the approved initial release at commit `27870fb1d57d951b9ef5a3a86f33ef068ee557da`.
 
-The three existing ecosystem products have adopted that exact release:
+The four ecosystem products have adopted that exact release:
 
 - [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/2e402d89598849f37e12f6e54c9d7f24ac5ca76c/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
-- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/f91851a1b42b28b01928e5db7aaac4c20b946417/decisions/0003-adopt-open-framework-commons-v1.0.0.md); and
-- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/04d9bad2588af2e7725fbdb3d03f232373dcd620/decisions/0002-adopt-open-framework-commons-v1.0.0.md).
-
-Relationship Operating Framework has not been created and therefore has not made an adoption decision.
+- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/f91851a1b42b28b01928e5db7aaac4c20b946417/decisions/0003-adopt-open-framework-commons-v1.0.0.md);
+- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/04d9bad2588af2e7725fbdb3d03f232373dcd620/decisions/0002-adopt-open-framework-commons-v1.0.0.md); and
+- [Relationship Operating Framework](https://github.com/BradGroux/relationship-operating-framework/blob/ce7957143aa5eb3860b2fe81b63ec62a8857dbfb/README.md#commons-adoption-and-independence).

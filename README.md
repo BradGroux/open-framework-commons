@@ -61,9 +61,12 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 Version 1.0.0 is the approved initial release. Each product pins the exact Commons commit resolved by that release rather than relying on a moving branch.
 
-The four ecosystem products maintain their adoption records at:
+The four ecosystem products record their Commons v1.0.0 adoption in stable release pages:
 
-- [AI-Native Operating Framework](https://github.com/BradGroux/ai-native-operating-framework/blob/main/decisions/0008-adopt-open-framework-commons-v1-0-0.md);
-- [Influence Operating Framework](https://github.com/BradGroux/influence-operating-framework/blob/main/decisions/0003-adopt-open-framework-commons-v1.0.0.md);
-- [AI Dev Days](https://github.com/BradGroux/ai-dev-days/blob/master/decisions/0002-adopt-open-framework-commons-v1.0.0.md); and
-- [Relationship Operating Framework](https://github.com/BradGroux/relationship-operating-framework/blob/main/README.md#commons-adoption-and-independence).
+- [AI-Native Operating Framework v1.0.0](https://github.com/BradGroux/ai-native-operating-framework/releases/tag/v1.0.0);
+- [Influence Operating Framework v1.0.0](https://github.com/BradGroux/influence-operating-framework/releases/tag/v1.0.0);
+- [AI Dev Days v1.0.0](https://github.com/BradGroux/ai-dev-days/releases/tag/v1.0.0); and
+- [Relationship Operating Framework v1.0.0](https://github.com/BradGroux/relationship-operating-framework/releases/tag/v1.0.0).
+
+Each product owns its release target and product-local adoption evidence. Commons
+does not mirror downstream commit hashes or moving branch paths.

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: If you use Open Framework Commons, cite this repository and the exact release you reviewed.
+title: Open Framework Commons
+authors:
+  - family-names: Groux
+    given-names: Brad
+version: 1.1.0
+date-released: 2026-08-22
+license: MIT
+repository-code: https://github.com/BradGroux/open-framework-commons
+url: https://github.com/BradGroux/open-framework-commons/releases/tag/v1.1.0
+abstract: Shared principles and boundaries for the Open Framework Ecosystem.

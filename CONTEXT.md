@@ -9,7 +9,7 @@ A documented set of principles, boundaries, and practical guidance that people a
 _Avoid_: Application, runtime, operating system, software platform
 
 **Open Framework Ecosystem**:
-AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, Relationship Operating Framework, and the Commons documentation they share.
+AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, Relationship Operating Framework, Focus Operating Framework, and the Commons documentation they share.
 _Avoid_: Suite, monolith, platform
 
 **Open Framework Commons**:
@@ -21,7 +21,7 @@ An ecosystem product with its own purpose, audience, guidance, authority, and ev
 _Avoid_: Module, child framework
 
 **Shared principle**:
-A durable belief that should guide all four ecosystem products while allowing different local methods.
+A durable belief that should guide all five ecosystem products while allowing different local methods.
 _Avoid_: Universal workflow, implementation requirement
 
 **Product-local guidance**:

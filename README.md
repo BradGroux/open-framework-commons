@@ -2,12 +2,13 @@
 
 Open Framework Commons is the small set of shared principles and boundaries for Brad Groux's Open Framework Ecosystem.
 
-This release is scoped to exactly four independent products:
+This release is scoped to exactly five independent products:
 
 - AI-Native Operating Framework
 - Influence Operating Framework
 - AI Dev Days
 - Relationship Operating Framework
+- Focus Operating Framework
 
 Commons is documentation. People and agents can read it before using or changing an ecosystem product so they understand the philosophy those products share.
 
@@ -15,7 +16,7 @@ Commons is not a framework for accomplishing product-specific work. It is not an
 
 ## Ecosystem at a glance
 
-This diagram answers how four independent products can share Commons without becoming modules of it.
+This diagram answers how five independent products can share Commons without becoming modules of it.
 
 ```mermaid
 flowchart TB
@@ -25,10 +26,12 @@ flowchart TB
     influence["Influence<br/>Operating Framework"]
     devdays["AI Dev Days<br/>Learning community"]
     relationship["Relationship<br/>Operating Framework"]
+    focus["Focus<br/>Operating Framework"]
 
     native ~~~ influence
     influence ~~~ devdays
     devdays ~~~ relationship
+    relationship ~~~ focus
   end
 
   commons["Open Framework Commons<br/>Shared principles and boundaries"]
@@ -59,14 +62,23 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Version 1.0.0 is the approved initial release. Each product pins the exact Commons commit resolved by that release rather than relying on a moving branch.
+Version 1.1.0 is the current release. It recognizes Focus Operating Framework in Commons scope and retains the shared principles and boundaries established in version 1.0.0. Each product independently pins the exact Commons release it has reviewed rather than relying on a moving branch.
 
-The four ecosystem products record their Commons v1.0.0 adoption in stable release pages:
+The five ecosystem products record their Commons adoption in stable release pages:
 
 - [AI-Native Operating Framework v1.0.0](https://github.com/BradGroux/ai-native-operating-framework/releases/tag/v1.0.0);
 - [Influence Operating Framework v1.0.0](https://github.com/BradGroux/influence-operating-framework/releases/tag/v1.0.0);
-- [AI Dev Days v1.0.0](https://github.com/BradGroux/ai-dev-days/releases/tag/v1.0.0); and
-- [Relationship Operating Framework v1.0.0](https://github.com/BradGroux/relationship-operating-framework/releases/tag/v1.0.0).
+- [AI Dev Days v1.0.0](https://github.com/BradGroux/ai-dev-days/releases/tag/v1.0.0);
+- [Relationship Operating Framework v1.0.0](https://github.com/BradGroux/relationship-operating-framework/releases/tag/v1.0.0); and
+- [Focus Operating Framework v1.0.0](https://github.com/BradGroux/focus-operating-framework/releases/tag/v1.0.0).
 
 Each product owns its release target and product-local adoption evidence. Commons
 does not mirror downstream commit hashes or moving branch paths.
+
+## Project resources
+
+- [Changelog](CHANGELOG.md)
+- [Contributing guide](CONTRIBUTING.md)
+- [Code of conduct](CODE_OF_CONDUCT.md)
+- [Security policy](SECURITY.md)
+- [Citation metadata](CITATION.cff)

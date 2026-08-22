@@ -1,6 +1,6 @@
 # Charter
 
-- **Status:** Version 1.0.0 approved initial release
+- **Status:** Version 1.1.0 approved release
 - **Steward:** Brad Groux
 
 ## Purpose
@@ -15,8 +15,9 @@ Commons is scoped to:
 
 - AI-Native Operating Framework;
 - Influence Operating Framework;
-- AI Dev Days; and
-- Relationship Operating Framework.
+- AI Dev Days;
+- Relationship Operating Framework; and
+- Focus Operating Framework.
 
 These products have equal provenance and importance. They may serve different audiences, use different structures, and evolve on different schedules.
 

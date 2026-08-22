@@ -1,0 +1,36 @@
+name: Commons change
+description: Propose a correction or shared change to Open Framework Commons.
+title: ""
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Read CHARTER.md, BOUNDARIES.md, GOVERNANCE.md, and CONTRIBUTING.md before proposing a material change.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is unclear, incorrect, or missing, and who does it affect?
+    validations:
+      required: true
+  - type: textarea
+    id: shared
+    attributes:
+      label: Shared applicability
+      description: Why does this belong in Commons rather than one product?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and uncertainty
+      description: What supports the proposal, and what remains uncertain?
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: Which canonical documents, products, or adoption decisions could be affected?
+    validations:
+      required: true

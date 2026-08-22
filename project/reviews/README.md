@@ -4,7 +4,9 @@ This directory preserves sanitized independent reviews and their disposition. A 
 
 ## Visualization candidate reviewed on 2026-08-03
 
-Reviewed commit: `b54e51c228f7fedd526053c0688d0a9627cf6c42`
+Reviewed candidate: `b54e51c228f7fedd526053c0688d0a9627cf6c42`
+
+Merged commit: `7c41e29ef7bcebc7c7994951fe786a910aa26658`
 
 | Perspective | Verdict | Findings |
 |---|---|---|
@@ -13,7 +15,13 @@ Reviewed commit: `b54e51c228f7fedd526053c0688d0a9627cf6c42`
 
 The candidate adds three inline visual guides, synchronizes Relationship Operating Framework's active status across the canonical product inventories, and records all four exact-release adoption references. See the [consolidated visualization review](open-framework-commons-visualization-review-2026-08-03.md).
 
-The review approves the documentation candidate only. Release treatment remains a separate owner decision because all four products pin Commons v1.0.0 to `27870fb1d57d951b9ef5a3a86f33ef068ee557da`.
+The review approved the pre-merge documentation candidate. Its content and the
+review record were published through PR #2's squash merge at
+`7c41e29ef7bcebc7c7994951fe786a910aa26658`, so the candidate commit itself is
+not part of the main branch history. The coordinated v1.0.0 release was
+subsequently finalized at `a0f0d384e9010a65d1a21a324b4c912433d5e031`, which
+is the commit currently peeled from the annotated `v1.0.0` tag and the pin
+recorded by the adopting products.
 
 ## Corrected candidate reviewed on 2026-08-02
 
@@ -27,6 +35,11 @@ Reviewed commit: `ff149b37ae0e51c3489fada65857635cfbd34525`
 | [Publication integrity](open-framework-commons-post-fix-publication-integrity-review-2026-08-02.md) | GO | 1 Minor |
 
 The Minor and Suggestion were accepted and resolved in `0ab76316e37507e1949c715e59b3a95afc893288`. See the [review disposition](open-framework-commons-post-fix-review-disposition-2026-08-02.md).
+
+These reports remain point-in-time records of the draft candidate they name.
+Commons was approved as v1.0.0 and Relationship Operating Framework became an
+active ecosystem product in the subsequent 2026-08-03 release work. Current
+status and scope are authoritative in the repository's canonical documents.
 
 ## Public review record standard
 

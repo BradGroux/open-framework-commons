@@ -6,7 +6,7 @@ Commons contains principles and boundaries that apply across the ecosystem. It d
 
 ## Every product stands alone
 
-AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, and Relationship Operating Framework each own their:
+AI-Native Operating Framework, Influence Operating Framework, AI Dev Days, Relationship Operating Framework, and Focus Operating Framework each own their:
 
 - purpose and audience;
 - practical guidance and methods;
@@ -20,9 +20,9 @@ Referencing Commons does not make a product a module, child product, or implemen
 
 ## Shared versus local test
 
-A statement belongs in Commons only when it expresses a principle or boundary that should apply to all four ecosystem products.
+A statement belongs in Commons only when it expresses a principle or boundary that should apply to all five ecosystem products.
 
-If a statement tells someone how to perform AI-native work, practice influence, run AI Dev Days, or steward a relationship, it belongs in that product instead.
+If a statement tells someone how to perform AI-native work, practice influence, run AI Dev Days, steward a relationship, or direct personal focus, it belongs in that product instead.
 
 When uncertain, keep the idea local until repeated use shows that it is genuinely shared.
 
@@ -32,11 +32,11 @@ This diagram answers whether a statement belongs in Commons or should remain wit
 
 ```mermaid
 flowchart TD
-  start["Does the statement apply to all four ecosystem products?"]
+  start["Does the statement apply to all five ecosystem products?"]
   local["Keep it product-local"]
   kind["Is it a shared principle or boundary?"]
   proposal["Propose a Commons change"]
-  review["Review the effect on all four products"]
+  review["Review the effect on all five products"]
   steward{"Steward decision"}
   release["Publish in an exact tagged Commons release"]
 

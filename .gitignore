@@ -5,3 +5,9 @@
 
 # Preserve overbuilt snapshots locally without tracking them.
 *-overbuilt/
+
+# Local validation tools and generated previews.
+.venv/
+node_modules/
+.validation-render/
+__pycache__/

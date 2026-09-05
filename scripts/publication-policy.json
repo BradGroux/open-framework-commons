@@ -1,0 +1,19 @@
+{
+  "patterns": [
+    "/Users/",
+    "/home/[^ /]+/",
+    "gho_[a-z0-9_]+",
+    "\\bsk-[a-z0-9_-]+",
+    "\\b(codex|chatgpt|claude|anthropic|openai)\\b"
+  ],
+  "exceptions": [
+    {
+      "path": "scripts/publication-policy.json",
+      "sha256": "5a3dd0bda27fd055ba54627bad065c92c71eae473e2b3d59ed1ac2f156a02b5d"
+    },
+    {
+      "path": "scripts/publication-policy.json",
+      "sha256": "f596ef5d653744ca1eeae1c38c3c0d51c3037567a36aa0b9f3511533777c1283"
+    }
+  ]
+}

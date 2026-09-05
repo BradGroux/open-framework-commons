@@ -1,6 +1,6 @@
 # Charter
 
-- **Status:** Version 1.1.0 approved release
+- **Status:** Version 2026.09.05 approved edition
 - **Steward:** Brad Groux
 
 ## Purpose

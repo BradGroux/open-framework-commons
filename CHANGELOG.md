@@ -2,6 +2,26 @@
 
 All notable changes to Open Framework Commons are recorded here.
 
+## [2026.09.05] - 2026-09-05
+
+### Changed
+
+- Began YYYY.MM.DD calendar editions with optional same-day correction suffixes; preserved all prior version identities.
+- Clarified contribution, legitimate help, privacy, consent and responsible disengagement boundaries.
+- Defined bounded conflict resolution, material evidence/applicability dispositions, content compatibility and adoption with deviations.
+
+### Added
+
+- Decision 0002, fictional content/process review cases and a reusable release procedure.
+- Parser-based public-inventory Markdown validation, calendar/CFF/release metadata checks, redacted publication scanning and isolated regression tests.
+- Locked development tooling, diagram compilation, dependency update configuration and bounded read-only CI.
+- Exact-repository release identity/body verification with explicit historical limitations.
+
+### Operations
+
+- Protected published tags, required validation before main changes, and enabled immutable future releases through repository settings.
+- Resolved the content/process and repository audit findings without changing downstream adoption records or historical reviews.
+
 ## [1.1.0] - 2026-08-22
 
 ### Added
@@ -37,3 +57,5 @@ All notable changes to Open Framework Commons are recorded here.
 
 [1.1.0]: https://github.com/BradGroux/open-framework-commons/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/BradGroux/open-framework-commons/releases/tag/v1.0.0
+
+[2026.09.05]: https://github.com/BradGroux/open-framework-commons/compare/v1.1.0...v2026.09.05

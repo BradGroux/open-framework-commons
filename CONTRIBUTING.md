@@ -28,7 +28,9 @@ Keep changes focused and preserve the distinction between Commons and each
 independent product. A pull request should link its issue, explain the decision
 being requested, and record the validation performed.
 
-Run the repository gate before requesting review:
+For material changes, include the [evidence disposition](RESEARCH-AND-REVIEW.md#material-change-disposition), [content compatibility assessment](GOVERNANCE.md#content-compatibility), and any relevant [conflict resolution](GOVERNANCE.md#resolving-conflicts). See [worked cases](project/reviews/content-process-cases-2026-09-05.md).
+
+Follow [validation setup and release operations](project/RELEASING.md#validation-setup), then run the repository gate before requesting review:
 
 ```sh
 ./scripts/validate-repository.sh

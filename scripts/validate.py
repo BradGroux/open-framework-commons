@@ -81,12 +81,19 @@ def metadata(root=ROOT, files=None):
     for path in [*CANONICAL, "PRINCIPLES.md", "RESEARCH-AND-REVIEW.md", "LICENSE",
                  "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", "project/RELEASING.md"]:
         read(path)
-    for path in ["README.md", "CHARTER.md"]:
-        if not re.search(r"\bVersion " + re.escape(version) + r"(?![\d.])", read(path)):
-            raise Invalid(f"Current edition missing or mismatched in {path}")
-    changelog = read("CHANGELOG.md")
-    if not re.search(r"^## \[" + re.escape(version) + r"\] - " + str(day) + r"$", changelog, re.M):
-        raise Invalid("Current CHANGELOG entry/date mismatch")
+    status_section = read("README.md").split("## Status\n", 1)
+    if len(status_section) != 2:
+        raise Invalid("README needs its designated Status section")
+    status = status_section[1].split("\n## ", 1)[0].strip()
+    if (not status.startswith(f"Version {version} is the current edition.")
+            or re.findall(r"^Version ([0-9.]+) is the current edition\.", status, re.M) != [version]):
+        raise Invalid("README current edition mismatch")
+    charter_status = re.findall(r"^- \*\*Status:\*\* (.+)$", read("CHARTER.md"), re.M)
+    if charter_status != [f"Version {version} approved edition"]:
+        raise Invalid("Charter current edition mismatch")
+    entries = re.findall(r"^## \[([^]]+)\](.*)$", read("CHANGELOG.md"), re.M)
+    if not entries or entries[0] != (version, " - " + str(day)) or sum(entry[0] == version for entry in entries) != 1:
+        raise Invalid("First CHANGELOG entry/date mismatch")
     notes = read(f"project/releases/v{version}.md")
     if notes.splitlines()[0] != f"# Open Framework Commons v{version}":
         raise Invalid("Active release note heading mismatch")
@@ -155,6 +162,11 @@ def markdown(root=ROOT, files=None):
     ids = {name: anchors(tokens) for name, tokens in docs.items()}
     for name, tokens in docs.items():
         for token in tokens:
+            for html in [token, *(token.children or [])]:
+                if html.type in {"html_inline", "html_block"} and re.search(
+                    r"<[^>]+\b(?:href|src|srcset|data|action)\s*=", html.content, re.I
+                ):
+                    raise Invalid(f"{name}: raw HTML navigation is unsupported")
             # CommonMark resolves reference links and titles; code tokens are not links.
             for child in token.children or []:
                 if child.type not in {"link_open", "image"}:
@@ -311,6 +323,8 @@ def check(root=ROOT, committed=False):
     markdown(root, files)
     hygiene(root, files)
     secrets(root, files)
+    empty_tree = command(["git", "hash-object", "-t", "tree", "/dev/null"], root).strip()
+    command(["git", "diff", "--check", empty_tree, "HEAD"], root)
     command(["git", "diff", "--check", "HEAD"], root)
     print(f"Repository validation passed for {version} ({len(files)} public files).")
 

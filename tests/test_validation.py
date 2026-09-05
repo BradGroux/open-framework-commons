@@ -127,6 +127,30 @@ class Fixture(unittest.TestCase):
         with self.assertRaises(v.Invalid):
             v.hygiene(self.root)
 
+    def test_raw_html_navigation_rejected_but_formatting_allowed(self):
+        for content in ['<a href="missing.md">bad</a>', '<img src="../private.png">',
+                        '<div>\n<a href="missing.md">bad</a>\n</div>']:
+            self.write("README.md", content)
+            with self.assertRaisesRegex(v.Invalid, "raw HTML navigation"):
+                v.markdown(self.root)
+        self.write("README.md", "Hello<br>world\n\n`<a href=missing.md>`")
+        v.markdown(self.root)
+
+    def test_current_metadata_cannot_be_satisfied_by_decoy_mentions(self):
+        self.copy_metadata()
+        edition = (self.root / "VERSION").read_text().strip()
+        for name in ["README.md", "CHARTER.md"]:
+            path = self.root / name
+            original = path.read_text()
+            path.write_text(original.replace("Version " + edition, "Version 1999.01.01") + "\nVersion " + edition + "\n")
+            with self.assertRaises(v.Invalid):
+                v.metadata(self.root)
+            path.write_text(original)
+        path = self.root / "CHANGELOG.md"
+        path.write_text("## [2099.01.01] - 2099-01-01\n\n" + path.read_text())
+        with self.assertRaises(v.Invalid):
+            v.metadata(self.root)
+
     def test_unclosed_mermaid_fence_fails(self):
         self.write("README.md", "```mermaid\nflowchart LR\n  A --> B\n")
         with self.assertRaisesRegex(v.Invalid, "unclosed Mermaid"):
@@ -160,6 +184,15 @@ class Fixture(unittest.TestCase):
             f.write_text(f.read_text().replace(edition, '2099.01.01').replace(str(date), '2099-01-01'))
         with self.assertRaisesRegex(v.Invalid, "Missing public regular file"):
             v.metadata(self.root)
+        original_note = (self.root / f"project/releases/v{edition}.md").read_text()
+        future_note = original_note.replace(edition, "2099.01.01").replace(str(date), "2099-01-01")
+        self.write("project/releases/v2099.01.01.md", future_note)
+        self.assertEqual(v.metadata(self.root), "2099.01.01")
+        for name in ["VERSION", "README.md", "CHARTER.md", "CHANGELOG.md", "CITATION.cff"]:
+            path = self.root / name
+            path.write_text(path.read_text().replace("2099.01.01", "2099.01.01.1"))
+        self.write("project/releases/v2099.01.01.1.md", future_note.replace("2099.01.01", "2099.01.01.1"))
+        self.assertEqual(v.metadata(self.root), "2099.01.01.1")
 
     def test_release_response_state_author_and_body(self):
         good = {"tag_name": "v2026.09.05", "draft": False, "prerelease": False,

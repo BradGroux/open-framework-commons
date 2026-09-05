@@ -2,6 +2,10 @@
 
 This directory preserves sanitized independent reviews and their disposition. A report evaluates the exact commit it names; it does not become a Commons requirement or prove real-world effectiveness.
 
+## Calendar edition reviewed on 2026-09-05
+
+The [edition disposition](edition-2026-09-05-disposition.md) records the exact reviewed candidate, standards/specification outcomes, resolved backlog and verification limits.
+
 ## Visualization candidate reviewed on 2026-08-03
 
 Reviewed candidate: `b54e51c228f7fedd526053c0688d0a9627cf6c42`

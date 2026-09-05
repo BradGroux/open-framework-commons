@@ -1,6 +1,6 @@
 # Shared Principles
 
-These principles are the common foundation of the Open Framework Ecosystem. Each product expresses them in its own context.
+These principles are the common foundation of the Open Framework Ecosystem. They are chosen commitments, not claims that following them guarantees an outcome. Each product expresses them in its own context. When principles appear to compete, preserve human boundaries and use the [conflict process](GOVERNANCE.md#resolving-conflicts) rather than inventing permission or a universal ranking.
 
 ## People first
 
@@ -12,11 +12,11 @@ Methods and principles should survive changes in models, vendors, applications, 
 
 ## Play the long game
 
-Prefer durable relationships, useful work, shared learning, and ecosystem health over short-term attention or transactions.
+Prefer durable relationships, useful work, shared learning, and ecosystem health over short-term attention or transactions. Long-term care can mean declining, ending a harmful commitment, or respecting disengagement. Continuity does not override consent or personal boundaries.
 
 ## Contribute before extracting
 
-Create value, listen, and learn before asking for attention, access, or commercial return. Contribution is not a disguised obligation or sales tactic.
+Approach others with an intent to help, listen, and learn rather than treating them as a source of attention, access, or commercial return. Contribution is not a disguised obligation or sales tactic, and creates no entitlement to a reply, access, reciprocity, or continued participation. Legitimate requests for help, clarification, accommodation, or support do not have to be earned through prior contribution.
 
 ## Steward what matters
 
@@ -28,7 +28,7 @@ Shared philosophy does not require a shared audience, method, repository shape, 
 
 ## Build in the open
 
-Make principles, reasoning, examples, limits, and changes visible. Welcome useful contribution while keeping authority and product boundaries clear.
+Make principles, reasoning, examples, limits, and changes visible where sharing is appropriate. Openness does not authorize disclosure of private information or override consent, confidentiality, safety, or rights. Use a safe summary or withhold material when necessary. Welcome useful contribution while keeping authority and product boundaries clear.
 
 ## Learn honestly
 

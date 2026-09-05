@@ -52,7 +52,7 @@ Commons supplies shared documentation beneath the products. It does not direct o
 
 ## How people and agents should use Commons
 
-Read Commons for the shared philosophy, then read the selected product for the actual method, examples, and task guidance. If the two appear to conflict, stop and surface the conflict rather than silently rewriting either one.
+Read Commons for the shared philosophy, then read the selected product for the actual method, examples, and task guidance. If the two appear to conflict, pause the disputed action or representation and follow [Resolving conflicts](GOVERNANCE.md#resolving-conflicts). Check the adopted Commons revision first; unrelated safe work need not stop.
 
 Each product stands alone. A person may use one product without adopting the others.
 
@@ -62,9 +62,9 @@ Sanitized independent reviews and their disposition are published in [project/re
 
 ## Status
 
-Version 1.1.0 is the current release. It recognizes Focus Operating Framework in Commons scope and retains the shared principles and boundaries established in version 1.0.0. Each product independently pins the exact Commons release it has reviewed rather than relying on a moving branch.
+Version 2026.09.05 is the current edition. It clarifies human boundaries, conflict resolution, evidence review, and content compatibility, and starts calendar versioning. See the [release notes](project/releases/v2026.09.05.md) for adoption consequences. Each product independently pins the exact Commons release it has reviewed rather than relying on a moving branch.
 
-The five ecosystem products record their Commons adoption in stable release pages:
+The five ecosystem products record their original Commons adoption in these stable release pages:
 
 - [AI-Native Operating Framework v1.0.0](https://github.com/BradGroux/ai-native-operating-framework/releases/tag/v1.0.0);
 - [Influence Operating Framework v1.0.0](https://github.com/BradGroux/influence-operating-framework/releases/tag/v1.0.0);
@@ -73,7 +73,7 @@ The five ecosystem products record their Commons adoption in stable release page
 - [Focus Operating Framework v1.0.0](https://github.com/BradGroux/focus-operating-framework/releases/tag/v1.0.0).
 
 Each product owns its release target and product-local adoption evidence. Commons
-does not mirror downstream commit hashes or moving branch paths.
+does not mirror downstream commit hashes or moving branch paths. For current adoption, consult the selected product’s own release history and governance. An older Commons pin remains valid until that product chooses otherwise.
 
 ## Project resources
 

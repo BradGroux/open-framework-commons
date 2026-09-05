@@ -24,7 +24,7 @@ body:
     id: evidence
     attributes:
       label: Evidence and uncertainty
-      description: What supports the proposal, and what remains uncertain?
+      description: Is this a chosen value, interpretation, or claimed effect? Give evidence, limits, counterexamples, and the reason it applies across the five products.
     validations:
       required: true
   - type: textarea

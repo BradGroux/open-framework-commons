@@ -8,6 +8,8 @@ Describe the problem resolved and the decision requested.
 - Canonical documents affected:
 - Why this belongs in Commons rather than one product:
 - Product adoption consequences, if any:
+- Material changes: reasoned applicability, counterevidence, decision owner and disposition:
+- Changed reader decisions, exceptions and compatibility assessment:
 
 ## Verification
 

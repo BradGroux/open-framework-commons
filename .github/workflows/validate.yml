@@ -3,17 +3,50 @@ name: Validate repository
 on:
   pull_request:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: read
 
+concurrency:
+  group: validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
-      - name: Validate documentation and release metadata
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked validation tools
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install --require-hashes -r requirements-validation.txt
+          npm ci --ignore-scripts
+          mkdir -p "$RUNNER_TEMP/commons-tools"
+          gh release download v8.30.1 --repo gitleaks/gitleaks --pattern gitleaks_8.30.1_linux_x64.tar.gz --dir "$RUNNER_TEMP/commons-tools"
+          cd "$RUNNER_TEMP/commons-tools"
+          echo '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  gitleaks_8.30.1_linux_x64.tar.gz' | sha256sum -c -
+          tar -xzf gitleaks_8.30.1_linux_x64.tar.gz gitleaks
+          echo "$RUNNER_TEMP/commons-tools" >> "$GITHUB_PATH"
+      - name: Validate documents, metadata, regressions and public inventory
         run: ./scripts/validate-repository.sh
+      - name: Scan complete Git history with redaction
+        run: gitleaks git . --no-banner --redact --log-level error
+      - name: Compile all diagrams
+        run: CHROME_PATH="$(command -v google-chrome)" .venv/bin/python scripts/validate.py diagrams

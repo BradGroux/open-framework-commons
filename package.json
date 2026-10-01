@@ -3,5 +3,5 @@
   "private": true,
   "version": "0.0.0",
   "description": "Development-only diagram validation for documentation editions",
-  "devDependencies": {"@mermaid-js/mermaid-cli": "11.16.0"}
+  "devDependencies": {"@mermaid-js/mermaid-cli": "12.0.0"}
 }
